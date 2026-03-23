@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\toddu\\source\\repos\\Pilot2Copilot\\bin\\Release\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\toddu\\source\\repos\\Pilot2Copilot\\obj\\Release\\net8.0\\compressed\\l9jkb749hp.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\toddu\\source\\repos\\Pilot2Copilot\\obj\\Release\\net8.0\\scopedcss\\bundle\\Pilot2Copilot.styles.css",
+      "PackagePath": "staticwebassets\\Pilot2Copilot.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\toddu\\source\\repos\\Pilot2Copilot\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\toddu\\source\\repos\\Pilot2Copilot\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\toddu\\source\\repos\\Pilot2Copilot\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\toddu\\source\\repos\\Pilot2Copilot\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\toddu\\source\\repos\\Pilot2Copilot\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\toddu\\source\\repos\\Pilot2Copilot\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\toddu\\source\\repos\\Pilot2Copilot\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Pilot2Copilot.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.Pilot2Copilot.props",
+      "PackagePath": "build\\Pilot2Copilot.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Pilot2Copilot.props",
+      "PackagePath": "buildMultiTargeting\\Pilot2Copilot.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.Pilot2Copilot.props",
+      "PackagePath": "buildTransitive\\Pilot2Copilot.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

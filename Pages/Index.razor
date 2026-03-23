@@ -1,0 +1,346 @@
+﻿@page "/"
+
+<PageTitle>AI-Native Enterprise Architecture | Systems-Less Architecture</PageTitle>
+
+<div class="page">
+
+    <!-- HERO / CONSULTING FRONT DOOR -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>AI-Native Enterprise Architecture</h1>
+            <h2>From systems that constrain you to workflows that compose you.</h2>
+            <p>
+                We help Chief AI Officers, Enterprise Architects, and transformation leaders design
+                enterprises where workflows—not systems—are the primary building blocks, and AI is
+                the execution fabric.
+            </p>
+            <div class="hero-ctas">
+                <a href="#whitepaper" class="btn primary">Download the White Paper</a>
+                <a href="#playbook" class="btn secondary">Explore the AI-Native Playbook</a>
+            </div>
+            <p class="hero-subtext">
+                Systems-Less Architecture is a practical, AI-native enterprise architecture framework:
+                workflow-first, system-agnostic, and ready to run on Microsoft 365, Power Automate,
+                Dataverse, and Copilot.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION: WHY THIS, WHY NOW (FOR CAIO) -->
+    <section class="section" id="why">
+        <h2>Why AI-Native, Why Now</h2>
+        <p>
+            Enterprises have spent decades automating around systems—integrating, wrapping, and
+            extending platforms that were never designed for AI. Agentic AI has exposed the limits
+            of that approach: legacy systems are not assets in an AI-native enterprise. They are
+            constraints.
+        </p>
+        <p>
+            An AI-native enterprise starts from a different premise: the fundamental unit of design
+            is the business workflow, captured as it is actually performed by humans, executed by AI,
+            and backed by a shared semantic memory. Systems become optional implementation details,
+            not architectural anchors.
+        </p>
+        <div class="pillars-grid">
+            <div class="pillar">
+                <h3>Workflow-First</h3>
+                <p>
+                    Model how work is really done—decisions, handoffs, exceptions—and encode it as
+                    first-class, composable workflows instead of burying it inside applications.
+                </p>
+            </div>
+            <div class="pillar">
+                <h3>Shared Semantic Memory</h3>
+                <p>
+                    Establish a relationship-defined data model in Dataverse as the canonical source
+                    of truth for customers, contracts, assets, obligations, and events.
+                </p>
+            </div>
+            <div class="pillar">
+                <h3>AI as Fabric</h3>
+                <p>
+                    Use Copilot and agentic orchestration to perceive signals, reason about goals,
+                    select tools, and execute workflows end-to-end with human-defined guardrails.
+                </p>
+            </div>
+            <div class="pillar">
+                <h3>Legacy as Constraint</h3>
+                <p>
+                    Treat legacy systems as data mines to be harvested and retired, not as permanent
+                    dependencies to be integrated forever.
+                </p>
+            </div>
+            <div class="pillar">
+                <h3>Business-Defined Agility</h3>
+                <p>
+                    Put subject matter experts in the authoring loop so the business defines how work
+                    is done—and AI scales that definition.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: WHITE PAPER (FOR ENTERPRISE ARCHITECTS) -->
+    <section class="section highlight" id="whitepaper">
+        <div class="section-header">
+            <h2>The AI-Native Enterprise Architecture White Paper</h2>
+            <p>
+                A rigorous, architecture-grade treatment of Systems-Less Architecture for Enterprise
+                Architects, CAIOs, and technology leaders.
+            </p>
+        </div>
+
+        <div class="two-column">
+            <div>
+                <h3>What the white paper covers</h3>
+                <ul>
+                    <li>
+                        <strong>Conceptual model:</strong> Workflows as the primary building blocks,
+                        Dataverse as semantic memory, AI as orchestration and execution.
+                    </li>
+                    <li>
+                        <strong>Reference architecture:</strong> How to implement AI-native EA using
+                        Microsoft 365, Power Automate, Dataverse, and Copilot.
+                    </li>
+                    <li>
+                        <strong>Migration strategy:</strong> Rebuilding enterprise-critical processes
+                        as native flows while progressively retiring legacy systems.
+                    </li>
+                    <li>
+                        <strong>Governance and risk:</strong> Observability, policy enforcement,
+                        reversibility, and CAIO-grade accountability.
+                    </li>
+                    <li>
+                        <strong>Patterns and anti-patterns:</strong> When to integrate, when to
+                        rebuild, and how to avoid “AI-wrapped legacy” traps.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Get the white paper</h3>
+                <p>
+                    Share a few details and we’ll send you the latest version of the AI-Native
+                    Enterprise Architecture white paper.
+                </p>
+                <EditForm Model="@whitePaperRequest" OnValidSubmit="@SubmitWhitePaperRequest">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+
+                    <div class="form-field">
+                        <label>Full Name</label>
+                        <InputText @bind-Value="whitePaperRequest.Name" />
+                    </div>
+                    <div class="form-field">
+                        <label>Work Email</label>
+                        <InputText @bind-Value="whitePaperRequest.Email" />
+                    </div>
+                    <div class="form-field">
+                        <label>Role</label>
+                        <InputText @bind-Value="whitePaperRequest.Role" />
+                    </div>
+                    <div class="form-field">
+                        <label>Organization</label>
+                        <InputText @bind-Value="whitePaperRequest.Organization" />
+                    </div>
+                    <button type="submit" class="btn primary">Request White Paper</button>
+
+                    @if (whitePaperSubmitted)
+                    {
+                        <p class="form-success">
+                            Thank you. We’ll send you the white paper and follow up with options
+                            for a deeper architecture session if you’d like.
+                        </p>
+                    }
+                </EditForm>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: PLAYBOOK (FOR CONSULTANTS & BUYERS) -->
+    <section class="section" id="playbook">
+        <h2>The AI-Native Enterprise Playbook</h2>
+        <p>
+            A practical, engagement-ready playbook that consultants can sell and customers can
+            immediately recognize as the path they want to be on.
+        </p>
+
+        <div class="playbook-steps">
+            <div class="step">
+                <h3>Step 1: Discover the Real Work</h3>
+                <p>
+                    Map how value actually flows today—across sales, operations, finance, and
+                    support—by observing human workflows, not system diagrams. Identify 3–5
+                    enterprise-critical processes to rebuild natively.
+                </p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Define the Semantic Core</h3>
+                <p>
+                    Design a Dataverse-based semantic model for your core entities and events:
+                    customers, contracts, products, obligations, risks, and lifecycle states.
+                </p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Rebuild Workflows Natively</h3>
+                <p>
+                    Implement the target processes as Power Automate flows that create, read,
+                    update, and delete enterprise-critical data in Dataverse—without depending
+                    on legacy systems for execution.
+                </p>
+            </div>
+            <div class="step">
+                <h3>Step 4: Introduce Agentic Orchestration</h3>
+                <p>
+                    Layer Copilot and agentic patterns on top of these workflows so AI can
+                    perceive signals, reason about goals, and execute flows end-to-end with
+                    human-in-the-loop guardrails.
+                </p>
+            </div>
+            <div class="step">
+                <h3>Step 5: Liberate and Retire Legacy</h3>
+                <p>
+                    Import historical and operational data from legacy systems into Dataverse,
+                    redirect new work to AI-native workflows, and progressively retire systems
+                    as their responsibilities are absorbed.
+                </p>
+            </div>
+            <div class="step">
+                <h3>Step 6: Govern, Measure, and Refine</h3>
+                <p>
+                    Establish CAIO-grade governance: observability, audit trails, policy
+                    enforcement, and clear rollback paths. Measure value at the workflow level:
+                    cycle time, error rates, cost-to-serve, and business outcomes.
+                </p>
+            </div>
+        </div>
+
+        <div class="playbook-cta">
+            <p>
+                The playbook is designed to be sold as a structured engagement:
+                <strong>Assess → Design → Rebuild → Orchestrate → Retire → Govern.</strong>
+            </p>
+            <a href="#contact" class="btn secondary">Talk About a Pilot</a>
+        </div>
+    </section>
+
+    <!-- SECTION: WHO THIS IS FOR -->
+    <section class="section" id="personas">
+        <h2>Who This Is For</h2>
+        <div class="personas">
+            <div class="persona">
+                <h3>Chief AI Officers</h3>
+                <p>
+                    You need an enterprise architecture that can withstand scrutiny from boards,
+                    regulators, and world-class peers. AI-native EA gives you a defensible,
+                    governable, and explainable operating model—not just a collection of pilots.
+                </p>
+            </div>
+            <div class="persona">
+                <h3>Enterprise Architects</h3>
+                <p>
+                    You’ve seen the limits of integration-heavy modernization. This framework
+                    offers a clear, referenceable path to rebuild critical capabilities as
+                    workflows and semantic models, using platforms you already own.
+                </p>
+            </div>
+            <div class="persona">
+                <h3>Consulting Leaders</h3>
+                <p>
+                    You need something concrete to sell that customers immediately recognize as
+                    valuable. The AI-native playbook is a structured, repeatable engagement that
+                    aligns with how your clients are already thinking about AI and transformation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: CONTACT / SIMPLE FORM -->
+    <section class="section highlight" id="contact">
+        <h2>Start a Conversation</h2>
+        <p>
+            Whether you’re a CAIO, an Enterprise Architect, or a consulting partner, we can
+            co-design an AI-native path that fits your context and risk appetite.
+        </p>
+
+        <EditForm Model="@contactRequest" OnValidSubmit="@SubmitContactRequest">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="form-row">
+                <div class="form-field">
+                    <label>Full Name</label>
+                    <InputText @bind-Value="contactRequest.Name" />
+                </div>
+                <div class="form-field">
+                    <label>Work Email</label>
+                    <InputText @bind-Value="contactRequest.Email" />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-field">
+                    <label>Role</label>
+                    <InputText @bind-Value="contactRequest.Role" />
+                </div>
+                <div class="form-field">
+                    <label>Organization</label>
+                    <InputText @bind-Value="contactRequest.Organization" />
+                </div>
+            </div>
+            <div class="form-field">
+                <label>What would you like to explore?</label>
+                <InputTextArea @bind-Value="contactRequest.Message" />
+            </div>
+            <button type="submit" class="btn primary">Submit</button>
+
+            @if (contactSubmitted)
+            {
+                <p class="form-success">
+                    Thank you. We’ll follow up with options for a white paper briefing,
+                    an architecture deep dive, or a playbook pilot.
+                </p>
+            }
+        </EditForm>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© @DateTime.UtcNow.Year Systems-Less Architecture · AI-Native Enterprise Architecture</p>
+    </footer>
+</div>
+
+@code {
+    private WhitePaperRequest whitePaperRequest = new();
+    private bool whitePaperSubmitted;
+
+    private ContactRequest contactRequest = new();
+    private bool contactSubmitted;
+
+    private void SubmitWhitePaperRequest()
+    {
+        // TODO: Wire up to Azure Function, Logic App, or email service.
+        whitePaperSubmitted = true;
+    }
+
+    private void SubmitContactRequest()
+    {
+        // TODO: Wire up to Azure Function, Logic App, or CRM intake.
+        contactSubmitted = true;
+    }
+
+    public class WhitePaperRequest
+    {
+        public string? Name { get; set; }
+        public string? Email { get; set; }
+        public string? Role { get; set; }
+        public string? Organization { get; set; }
+    }
+
+    public class ContactRequest
+    {
+        public string? Name { get; set; }
+        public string? Email { get; set; }
+        public string? Role { get; set; }
+        public string? Organization { get; set; }
+        public string? Message { get; set; }
+    }
+}
